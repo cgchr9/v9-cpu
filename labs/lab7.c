@@ -148,7 +148,7 @@ int exec(char *program, char **argv)
 
 struct semaphore_t {
   int value;
-  struct proc *(p[20]);
+  //struct proc *(p[20]);
   int wait_proc;
   struct semaphore_t *next;         //首先把semophore组织成一个链表
   struct proc * references[NOSEMS];  //加了一个每个信号量都包含，一个指向该信号量本身的进程列表。
