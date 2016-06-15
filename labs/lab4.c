@@ -156,6 +156,7 @@ void kthread_example() {
   }
 }
 
+
 fork_kthread(void *entry)
 {
   char *mem;

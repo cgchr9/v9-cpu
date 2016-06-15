@@ -82,7 +82,6 @@ void find_victim() {
   if (!(*pde & PTE_P)) return 0;
   pt = P2V+(*pde & -PAGE);
   return &pt[(va >> 12) & 0x3ff];
-
 }
 
 // set up kernel page table: allocate enough page tables for all mem_sz bytes of memory
